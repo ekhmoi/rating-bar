@@ -58,4 +58,4 @@ public numberOfStars: number = 5;
 ##Demo
 
 
-![alt tag](https://github.com/ekhmoi/Ionic-Component-fab-toolbar/blob/master/demo/RatingBar.gif)
+![alt tag](https://github.com/ekhmoi/rating-bar/raw/master/demo/RatingBar.gif)
