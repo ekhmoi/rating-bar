@@ -44,13 +44,13 @@ public numberOfStars: number = 5;
 
 ```
 
-## Options                                                                         Defaults   
+## Options(default)   
 
-* rating: number        - this will preselect the stars depending on given value | 0
-* small: boolean        - wether to use small buttons or no                      | false
-* color: string         - color variable of the stars                            | 'secondary'
-* numberOfStars: number - how many stars there should be                         | 5
-* cssClass: string      - custom css class                                       | none
+* rating: number        - this will preselect the stars depending on given value ( 0 )
+* small: boolean        - wether to use small buttons or no                      ( false )
+* color: string         - color variable of the stars                            ( 'secondary' )
+* numberOfStars: number - how many stars there should be                         ( 5 )
+* cssClass: string      - custom css class                                       ( none )
 
 ### To get the value of the rating use `[(rating)]="myVar"`
 
