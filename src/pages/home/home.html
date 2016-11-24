@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-list-header> 
+      You are going to rate it with <ion-badge>{{rating}} <ion-icon name="star"></ion-icon></ion-badge>
+    </ion-list-header>
+    <rating-bar [(rating)]="rating" [small]="small" [color]="color" [numberOfStars]="numberOfStars"></rating-bar>
+    
+    <ion-item>
+      <ion-label>Color</ion-label>
+      <ion-select [(ngModel)]="color">
+        <ion-option value="primary">Primary</ion-option>
+        <ion-option value="secondary">Secondary</ion-option>
+        <ion-option value="dark">Dark</ion-option>
+        <ion-option value="danger">Danger</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Make Small</ion-label>
+      <ion-toggle checked="false" [(ngModel)]="small"></ion-toggle>
+    </ion-item>
+  </ion-list>
+
+<ion-row>
+  <ion-col with-50="">
+<button ion-button round block icon-left color="danger" (click)="removeStar()">
+  <ion-icon name="remove"></ion-icon>
+  Remove Star
+</button></ion-col>
+  <ion-col with-50="">
+<button ion-button round block icon-left color="secondary" (click)="addStar()">
+  <ion-icon name="add"></ion-icon>
+  Add Star
+</button>
+</ion-col>
+</ion-row>
+</ion-content>
