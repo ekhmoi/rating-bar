@@ -52,7 +52,7 @@ public numberOfStars: number = 5;
 * numberOfStars: number - how many stars there should be                         | 5
 * cssClass: string      - custom css class                                       | none
 
-# To get the value of the rating use `[(rating)]="myVar"`
+### To get the value of the rating use `[(rating)]="myVar"`
 
 
 ##Demo
